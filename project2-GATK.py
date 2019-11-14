@@ -13,10 +13,11 @@
 #$ bwa mem -t 4 -R '@RG\tID:foo_lane\tPL:illumina\tLB:library\tSM:sample_name' \
 # /path/to/human.fasta read_1.fq.gz read_2.fq.gz > sample_name.sam
 
+
 #step3:$ samtools sort sample_name.bam sample_name.sorted
 
 # #step4:
-# $ java -jar picard.jar MarkDuplicates \
+# $ java -jar path to/picard.jar MarkDuplicates \
 #   I=sample_name.sorted.bam \
 #   O=sample_name.sorted.markdup.bam \
 #   M=sample_name.markdup_metrics.txt
